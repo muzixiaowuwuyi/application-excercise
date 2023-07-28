@@ -1,29 +1,83 @@
-# Create T3 App
+Introduction:
+-------------
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+This exercise is designed to test your skills in building a simple blog application using TypeScript, Next.js, tRPC, Prisma, and Planetscale. The objective is to assess your ability to set up a project, work with various technologies, and implement basic CRUD operations.
 
-## What's next? How do I make an app with this?
+Tech Stack:
+-----------
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+-   TypeScript
+-   Next.js
+-   tRPC
+-   Prisma
+-   Planetscale
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+Setup Instructions:
+-------------------
 
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
+1.  Fork the repository.
+2.  Install the required dependencies by running `npm install`.
+3.  setup a Database at planetscale.
+4.  Configure the database connection in the `.env` file with your Planetscale credentials.
+5.  Set up the Prisma schema for the blog post and migrate to the database.
+6.  Run the development server using `npm run dev`.
 
-## Learn More
+Task Details:
+-------------
 
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
+You will be building a basic blog application with the following features:
 
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
+1.  Homepage:
 
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
+    -   Display a list of all blog posts with their titles and creation dates.
+    -   Clicking on a blog post should navigate to its detail page.
+2.  Blog Post Detail Page:
 
-## How do I deploy this?
+    -   Display the full content of the selected blog post.
+3.  Create Blog Post Page:
 
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
-# application-excercise
+    -   Provide a form to allow users to create a new blog post.
+    -   Implement client-side form validation to ensure the title and content are not empty.
+4.  Backend API:
+
+    -   Use tRPC to create the API endpoints for fetching all blog posts and fetching a single blog post by its ID.
+
+Implementation Guidelines:
+--------------------------
+
+1.  Project Structure:
+
+    -   Follow a clean and organized project structure.
+    -   Separate components, pages, and services for better code readability.
+2.  TypeScript:
+
+    -   Utilize TypeScript types for improved code safety and documentation.
+    -   Use interfaces and types for API responses and data models.
+3.  Next.js:
+
+    -   Utilize server-side rendering (SSR) and static site generation (SSG) where appropriate.
+    -   Use Next.js features such as dynamic routing and getStaticProps/getServerSideProps.
+4.  Prisma:
+
+    -   Define the "BlogPost" model in the Prisma schema with appropriate fields.
+    -   Use Prisma to interact with the database and implement CRUD operations.
+5.  Planetscale:
+
+    -   Set up the database connection and credentials in the `.env` file.
+    -   Use Planetscale to deploy and manage the application data.
+
+Submission Guidelines:
+----------------------
+
+1.  Commit your code to a GitHub repository.
+2.  Include a detailed README with instructions on how to set up and run the application.
+3.  Provide comments and documentation for important functions and components.
+4.  Submit the GitHub repository URL along with your completed exercise.
+
+Additional Notes:
+-----------------
+
+Feel free to reach out if you have any questions or need clarification on the exercise. We're looking forward to seeing your implementation!
+Also feel free to use any kind of library outside the given ones that you prefer. 
+
+Good luck and happy coding!

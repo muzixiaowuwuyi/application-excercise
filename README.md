@@ -20,7 +20,8 @@ Setup Instructions:
 3.  setup a Database at planetscale.
 4.  Configure the database connection in the `.env` file with your Planetscale credentials.
 5.  Set up the Prisma schema for the blog post and migrate to the database.
-6.  Run the development server using `npm run dev`.
+6.  Run `npx prisma studio` and pre-populate your DB with data.
+7.  Run the development server using `npm run dev`.
 
 Task Details:
 -------------
@@ -34,7 +35,7 @@ You will be building a basic blog application with the following features:
 2.  Blog Post Detail Page:
 
     -   Display the full content of the selected blog post.
-3.  Create Blog Post Page:
+3. BONUS EXCERCISE Create Blog Post Page:
 
     -   Provide a form to allow users to create a new blog post.
     -   Implement client-side form validation to ensure the title and content are not empty.

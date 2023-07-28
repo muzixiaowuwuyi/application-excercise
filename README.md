@@ -56,7 +56,7 @@ Implementation Guidelines:
 3.  Next.js:
 
     -   Utilize server-side rendering (SSR) and static site generation (SSG) where appropriate.
-    -   Use Next.js features such as dynamic routing and getStaticProps/getServerSideProps.
+    -   Use Next.js features such as dynamic routing.
 4.  Prisma:
 
     -   Define the "BlogPost" model in the Prisma schema with appropriate fields.

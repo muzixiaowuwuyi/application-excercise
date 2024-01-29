@@ -36,9 +36,10 @@ You will be building a basic blog application with the following features:
 
     -   Display the full content of the selected blog post.
 3. BONUS EXCERCISE Create Blog Post Page:
-
     -   Provide a form to allow users to create a new blog post.
-    -   Implement client-side form validation to ensure the title and content are not empty.
+    -   Implement client-side form validation to ensure the title and content are not empty. (extend the validation to your liking)
+    -   Implemnt Toast messsages.
+    -   Extract your queries and mutations into custom hooks.
 4.  Backend API:
 
     -   Use tRPC to create the API endpoints for fetching all blog posts and fetching a single blog post by its ID.

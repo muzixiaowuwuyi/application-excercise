@@ -6,12 +6,15 @@ generator client {
 }
 
 datasource db {
-    provider = "sqlite"
-    url      = env("DATABASE_URL")
+  provider     = "mysql"
+  url          = env("DATABASE_URL")
+  relationMode = "prisma"
 }
 
-model Example {
+model Blog {
     id        String   @id @default(cuid())
+    title     String   @db.VarChar(64)
+    content   String   @db.Text
     createdAt DateTime @default(now())
     updatedAt DateTime @updatedAt
 }

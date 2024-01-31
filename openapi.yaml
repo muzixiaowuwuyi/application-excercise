@@ -72,56 +72,6 @@ paths:
           description: Invalid ID supplied
         "404":
           description: Pet not found
-    patch:
-      tags:
-        - blog
-      summary: Update an existing blog entry
-      description: Update an existing blog by Id
-      operationId: updateBlog
-      parameters:
-        - name: blogId
-          in: path
-          description: ID of blog to return
-          required: true
-          schema:
-            type: string
-      requestBody:
-        description: Update an existent blog entry
-        content:
-          application/json:
-            schema:
-              $ref: "#/components/schemas/BlogRequest"
-        required: true
-      responses:
-        "200":
-          description: Successful operation
-          content:
-            application/json:
-              schema:
-                $ref: "#/components/schemas/BlogResponse"
-        "400":
-          description: Invalid ID supplied
-        "404":
-          description: Blog not found
-    delete:
-      tags:
-        - blog
-      summary: Deletes a blog entry
-      description: delete a blog entry
-      operationId: deleteBlog
-      parameters:
-        - name: blogId
-          in: path
-          description: Blog id to delete
-          required: true
-          schema:
-            type: integer
-            format: int64
-      responses:
-        "204":
-          description: successful operaion
-        "400":
-          description: Invalid id value
 components:
   schemas:
     BlogResponse:
